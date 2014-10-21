@@ -1,0 +1,73 @@
+// Helper Classes
+
+@import "mixins.scss";
+
+// Text align center
+.tc {
+	text-align: center!important;
+}
+
+// Light text
+.light {
+	color: $light;
+}
+
+.light-bkg {
+	background: $light;
+}
+
+// spacing elements
+.space-40 {
+	margin: 20px 0 40px 0;
+}
+
+.space-30 {
+	margin: 30px 0 0 0;
+}
+
+.space-8 {
+	margin: 6px 0 8px 0;
+}
+
+.sub-header {
+	margin: 10px 6px 20px 0;
+}
+
+// swatch with border
+.swatch {
+	border-radius: 14px;
+	overflow: hidden;
+}
+
+.swatch-inner {
+	height: 140px;
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid $asphalt;
+}
+
+.swatch-lower {
+	background: #f1f1f1;
+	padding: 16px 0;
+	color: $asphalt;
+}
+
+// height helpers
+
+.h-250 {
+	min-height: 250px;
+}
+
+.relative {
+	position: relative;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.open {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}

@@ -1,0 +1,41 @@
+section.jumbotron {
+	color: $light;
+	div.jumbotron-inner {
+		h1, h2, p {
+			width: 90%;
+		}
+		h1 {
+			font-size: 5em;
+		}
+		h2 {
+			font-size: 1.6em;
+			line-height: 110%;
+		}
+	}
+}
+
+section.jumbotron.teal {
+	background-color: $teal;
+}
+
+section.jumbotron.raspberry {
+	background-color: $raspberry;
+}
+
+section.jumbotron.cover-image {
+	background: url(../images/danielj.jpg) no-repeat center center fixed; 
+	@include cover-image;
+	position: relative;
+	div.container {
+		z-index: 1;
+	}
+	div.overlay {
+		opacity: .5;
+		z-index: 0;
+		@include position(absolute,0px 0 0 0px);
+		@include size(100%);
+		display: block;
+		// Use teal-raspberry- or teal-blue-
+		@include teal-blue-gradient;
+	}
+}

@@ -1,0 +1,22 @@
+// PopShack Logo
+
+// Logo with Retina Media Query
+.popshack-logo-title {
+  @include retina-image('../images/popshack-logo', 300px 65px);
+  display: block;
+  @include size(300 71);
+  background-color: $teal;
+  background-size: 100%;
+}
+
+.circle {
+	@include size(220px);
+	border-radius: 50%;
+	display: block;
+	@include position(absolute, 50% 50% 50% 50%);
+	margin: -110px 0 0 -110px;
+	@include retina-image('../images/popshack-logo', 80%);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+}

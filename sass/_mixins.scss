@@ -1,0 +1,413 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+@mixin cover-image {
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin teal-raspberry-gradient {
+	background: #62e0d4; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjJlMGQ0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhNGM3MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(45deg,  #62e0d4 0%, #ea4c70 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#62e0d4), color-stop(100%,#ea4c70), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  #62e0d4 0%,#ea4c70 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  #62e0d4 0%,#ea4c70 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  #62e0d4 0%,#ea4c70 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(45deg,  #62e0d4 0%,#ea4c70 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62e0d4', endColorstr='#7db9e8',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+@mixin teal-blue-gradient {
+	background: #62e0d4; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjJlMGQ0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNmNmJjMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(45deg,  #62e0d4 0%, #3f6bc1 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#62e0d4), color-stop(100%,#3f6bc1), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  #62e0d4 0%,#3f6bc1 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  #62e0d4 0%,#3f6bc1 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  #62e0d4 0%,#3f6bc1 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(45deg,  #62e0d4 0%,#3f6bc1 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62e0d4', endColorstr='#7db9e8',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+/*==========  FUNCTIONS  ==========*/
+
+  @function leading($size, $context: $lineHeight) {
+    @return  $context / $size + em;
+  }
+
+
+/*==========  MIXINS  ==========*/
+
+  @mixin prefixr($property, $value...) {
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+            #{$property}: $value;
+  }
+
+  @mixin media-query($media-query) {
+    @if $media-query == small {
+      @media only screen and (max-width:$medium - 1) { @content; }
+    }
+
+    @if $media-query == medium {
+      @media only screen and (min-width:$medium) { @content; }
+    }
+
+    @if $media-query == medium-only {
+      @media only screen and (min-width:$medium) and (max-width: $wide - 1) { @content; }
+    }
+
+    @if $media-query == wide {
+      @media only screen and (min-width:$wide) { @content; }
+    }
+
+    @if $media-query == huge {
+      @media only screen and (min-width:$huge) { @content; }
+    }
+  }
+
+  // Just some helpers...
+  @mixin small-only { @include media-query(small) { @content }; }
+  @mixin medium { @include media-query(medium) { @content }; }
+  @mixin medium-only { @include media-query(medium-only) { @content }; }
+  @mixin wide { @include media-query(wide) { @content }; }
+  @mixin huge { @include media-query(huge) { @content }; }
+
+
+  @mixin keyframes($animation-name){
+    @-webkit-keyframes $animation-name{
+      @content;
+    }
+
+    @-moz-keyframes $animation-name{
+      @content;
+    }
+
+    @-ms-keyframes $animation-name{
+      @content;
+    }
+
+    @keyframes $animation-name{
+      @content;
+    }
+  }
+
+  // Mixin to constrain elements
+  @mixin container($isRelative: false) {
+    @include prefixr(box-sizing, content-box);
+
+    @if $isRelative {
+      position: relative;
+    }
+
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @include medium {
+      padding-left: 4.8%;
+      padding-right: 4.8%;
+      max-width: $mediumContainer;
+    }
+
+    @include wide {
+      padding-left: 4.4%;
+      padding-right: 4.4%;
+      max-width: $wideContainer;
+    }
+  }
+
+
+
+  // Mixin to show a baseline grid
+  // only visible when body has 'debug' class
+  @mixin baseline-grid() {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      z-index: 9;
+
+      display: none;
+      background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.15)));
+      background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 95%,rgba(0,0,0,0.15) 100%);
+      background-image: -o-linear-gradient(top, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
+      background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 95%,rgba(0,0,0,0.15) 100%);
+      background-image: linear-gradient(top, rgba(0,0,0,0.15) 95%,rgba(0,0,0,0.15) 100%);
+
+      @include prefixr(background-size, 100% 26px);
+    }
+
+    &.debug::after {
+      display: block;
+      pointer-events: none;
+    }
+  }
+
+  // Mixins simply to store CSS rules
+  @mixin rule--small {
+    font-size: $fontSmall;
+    line-height: 2.0000em; /* 26px */
+    padding-top: 2.0000em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--base {
+    font-size: $fontBase;
+    line-height: 1.6250em; /* 26px */
+    padding-top: 1.6250em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--medium {
+    font-size: $fontMedium;
+    font-weight: 300;
+    line-height: 1.3000em; /* 26px */
+    padding-top: 1.3000em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--large {
+    font-family: $fontHighlight;
+    font-size: $fontLarge;
+    font-weight: 300;
+    line-height: 1.0000em; /* 26px */
+    padding-top: 1.0000em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--xlarge {
+    font-family: $fontHighlight;
+    font-size: $fontXLarge;
+    font-weight: 300;
+    line-height: 1.2381em; /* 52px */
+    padding-top: 0.6190em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--xxlarge {
+    font-family: $fontHighlight;
+    font-size: $fontXXLarge;
+    font-weight: 300;
+    line-height: 1.1471em; /* 78px */
+    padding-top: 0.3824em;
+    padding-bottom: 0;
+  }
+
+  @mixin rule--huge {
+    font-family: $fontHighlight;
+    font-size: $fontHuge;
+    font-weight: 300;
+    line-height: 1.19em; /* 130px */
+    padding-top: 0.2364em;
+    padding-bottom: 0;
+  }
+
+
+
+  // Mixins to determine which rule to use at which breakpoint
+  @mixin type--small($isFromMixin: false) {
+    @include rule--small;
+  }
+
+  @mixin type--base($isFromMixin: false) {
+    @include rule--base;
+  }
+
+  @mixin type--medium($isFromMixin: false) {
+    @if $isFromMixin == false {
+      @include type--base(true);
+      @include wide {
+        @include rule--medium;
+      }
+    }
+    @else {
+      @include rule--medium;
+    }
+  }
+
+  @mixin type--large($isFromMixin: false) {
+    @if $isFromMixin == false {
+      @include type--medium(true);
+      @include wide {
+        @include rule--large;
+      }
+    }
+    @else {
+      @include rule--large;
+    }
+  }
+
+  @mixin type--xlarge($isFromMixin: false) {
+    @if $isFromMixin == false {
+      @include type--large(true);
+      @include wide {
+        @include rule--xlarge;
+      }
+    }
+    @else {
+      @include rule--xlarge;
+    }
+  }
+
+  @mixin type--xxlarge($isFromMixin: false) {
+    @if $isFromMixin == false {
+      @include type--xlarge(true);
+      @include wide {
+        @include rule--xxlarge;
+      }
+    }
+    @else {
+      @include rule--xxlarge;
+    }
+  }
+
+  @mixin type--huge($isFromMixin: false) {
+    @if $isFromMixin == false {
+      @include type--xxlarge(true);
+      @include wide {
+        @include rule--huge;
+      }
+    }
+    @else {
+      @include rule--huge;
+    }
+  }
+
+
+  // LISTS
+  @mixin bullet-type($bullet, $icon: false) {
+    &::before {
+      @if $icon {
+        font-family: $fontIcon;
+        @extend .#{$icon}::before;
+        font-size: $fontSmall;
+      }
+      @else {
+        content: $bullet;
+        font-family: $fontHighlight;
+      }
+
+      display: block;
+      font-weight: 400;
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: $lineHeight;
+
+    }
+  }
+
+  @mixin numbered-list() {
+    &::before {
+      counter-increment: list;
+      content: "0" counter(list);
+      color: inherit;
+      font-weight: 400;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  // Mixin to create links
+  @mixin style-cta($textColor, $linkIcon: false) {
+    font-family: $fontHighlight;
+    color: $textColor;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+
+    &:hover {
+      color: $colorGrayDark;
+    }
+
+    @if $linkIcon {
+      text-decoration: none;
+      &::before {
+        display: inline-block;
+        padding-right: 10px;
+        font-family: $fontIcon;
+        line-height: ($lineHeight) - 1; // remove 1px from line-height to fix baseline alignment
+        font-size: $fontSmall;
+        content: $linkIcon;
+      }
+    }
+  }
+
+  // Mixin to create highlight modules
+  @mixin highlight-symbol($verticalOffset: 0, $horizontalOffset: 45px, $fontSize: 130px) {
+    position: relative;
+
+    &::before {
+      display: none;
+
+      @include medium {
+        display: block;
+        position: absolute;
+        top: 106px;
+        right: $horizontalOffset;
+
+        font-family: $fontIcon;
+        font-size: $fontSize;
+        line-height: 1px;
+        text-align: center;
+        height: 100%;
+        width: $mediumColWidth;
+        color: #ffffff;
+      }
+
+      .highlight-module--left & {
+        right: auto;
+        left: $horizontalOffset;
+      }
+
+      @include wide {
+        top: 134px;
+        width: $wideColWidth;
+        font-size: $fontSize + 50;
+
+        .highlight-module--large & {
+          font-size: $fontSize + 300;
+        }
+      }
+    }
+  }
+
+  // Grid CSS rules
+  @mixin rule--col($mediaQuery) {
+    @if $mediaQuery == medium {
+      float: left;
+      margin-right: $mediumGutterWidth;
+    }
+
+    @if $mediaQuery == wide {
+      float: left;
+      margin-right: $wideGutterWidth;
+    }
+  }
+
+  // Mixin for flexbox
+  @mixin flexbox {
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+  }

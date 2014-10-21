@@ -1,0 +1,32 @@
+@include keyframes(bkg-lime-to-teal) {
+  from {
+    background-color: $lime;
+  }
+  to {
+    background-color: $teal;
+  }
+}
+
+@include keyframes(bkg-lime-to-orange) {
+  from {
+    background-color: $lime;
+  }
+  to {
+    background-color: $orange;
+  }
+}
+
+@include keyframes(border-popshack) {
+  0% {
+    border-color: $raspberry;
+  }
+  33.3% {
+    border-color: $teal;
+  }
+  66.6% {
+    border-color: $orange;
+  }
+  100% {
+    border-color: $raspberry;
+  }
+}

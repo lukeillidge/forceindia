@@ -1,0 +1,84 @@
+/* Font
+================================================== */
+
+$header: bebas, sans-serif;
+$paragraph: 'Lato', sans-serif;
+$comicfont: odinlight, sans-serif;
+
+/* Color
+================================================== */
+
+$teal: #62e0d4;
+$raspberry: #ea4c70;
+$lime: #62e095;
+$orange: #ea774c;
+$darkteal: #32938a;
+$darkraspberry: #9e233f;
+$asphalt: #34495e;
+$warning: #f1c40f;
+$light: #F5F5F5;
+$dark: #3F3F3F;
+$cancel: #cfcfcf;
+$danger: rgb(231, 117, 117);
+
+// Defining breakpoints
+$medium: 620px !default;
+$wide: 800px !default;
+$huge: 1600px !default;
+$mediumContainer: 688px !default;
+$wideContainer: 864px !default;
+
+// Defining grid sizes
+$mediumColCount: 3 !default;
+$mediumColWidth: 30.3% !default;
+$mediumGutterWidth: 4.5% !default;
+$wideColCount: 4 !default;
+$wideColWidth: 22.2% !default;
+$wideGutterWidth: 3.7% !default;
+
+/* Swatches */
+
+.teal {
+	background: $teal;
+	color: $teal;
+}
+
+.raspberry {
+	background: $raspberry;
+	color: $raspberry;
+}
+
+.light {
+	background: $light;
+	color: $light;
+}
+
+.dark {
+	background: $dark;
+	color: $dark;
+}
+
+.lime {
+	background: $lime;
+	color: $lime;
+}
+
+.orange {
+	background: $orange;
+	color: $orange;
+}
+
+.asphalt {
+	background: $asphalt;
+	color: $asphalt;
+}
+
+.darkteal {
+	background: $darkteal;
+	color: $darkteal;
+}
+
+.darkraspberry {
+	background: $darkraspberry;
+	color: $darkraspberry;
+}

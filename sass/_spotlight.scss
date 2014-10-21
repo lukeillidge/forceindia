@@ -1,0 +1,58 @@
+// Spotlight SCSS //
+
+.featured-spotlight {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: $raspberry;
+  div.caption {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    height: auto;
+    background-color: $raspberry;
+    h2, p, div.form {
+      padding-left: 40%;
+      padding-right: 10%;
+    }
+  }
+  div.aside-image {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    height: auto;
+    background-color: $teal;
+  }
+}
+
+.flexbox {
+  background-color: $raspberry;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  .image {
+    order: 1;
+    flex-grow: 2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .caption {
+    order: 0;
+    .content {
+      padding-left: 30%;
+      padding-right: 10%;
+      h2, img, div {
+        margin: 20px auto;
+      }
+    }
+    h2 {
+      font: 48px/100% $header;
+      letter-spacing: -0.01em;
+    }
+  }
+}

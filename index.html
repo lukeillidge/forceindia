@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Force India / Design</title>
+	<meta name="description" content="Force India Start">
+	<meta name="author" content="Luke Illidge">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cantarell:400,700italic' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./js/vendor/jquery-ui-1.10.4.min.js"></script>
+
+	  <script>
+    paceOptions = {
+      elements: true
+    };
+  </script>
+
+	<script src="./js/pace.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="overlay">
+		<div class="loadscreen">
+			<ul id="lights">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<p>
+				FOR THE BEST EXPERIENCE<br>PLEASE TURN UP THE VOLUME<br>
+				<span class="fo">&amp; HOLD ON TIGHT</span>
+				<br><br>
+				<img src="./images/equalizer.gif" alt="Music">
+			</p>
+		</div>
+	</div>
+
+	<div class="overlay2">
+		<div class="forcelogo absolute-center"></div>
+		<div class="enter form">
+			<a class="btn-alt alt-dark forcebtn tooltip" href="./design/forceIndia_LI.psd" data-tip="Click to Download the PSD" download><h3>ENTER</h3></a>
+		</div>
+	</div>
+
+	<!-- Intro Jumbo -->
+	<section id="video_section">
+		<video id="force" loop>
+			<source src="./video/force.mp4" type="video/mp4">
+		  <source src="./video/force.ogv" type="video/ogg">
+		  <source src="./video/force.webm" type="video/webm">
+		Your browser does not support the video tag.
+		</video>
+		<audio id="underdog">
+ 			<source src="./audio/hysteria.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</section>
+
+		
+<!-- JavaScripts
+================================================== -->
+
+<script src="//vjs.zencdn.net/4.5/video.js"></script>
+<script src="./js/app.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

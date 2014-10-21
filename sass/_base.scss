@@ -1,0 +1,190 @@
+/* BASE STYLES: Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Lists
+	#Images
+	#Logo
+	#Nav
+*/
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+		*, *:before, *:after {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			outline: none;
+			font-weight: 300;
+		}
+		html {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #fff;
+		font: $paragraph;
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		overflow-x: hidden;
+ }
+
+ /* #Fonts
+================================================== */
+h1 {
+	font: 60px/150% $header;
+	letter-spacing: -0.02em;
+}
+
+h1.alt {
+	font: 60px/150% $header;
+	letter-spacing: -0.02em;
+	font-weight: 600;
+}
+
+h2 {
+	font: 32px/180% $paragraph;
+}
+
+h3 {
+	font: 24px/180% $paragraph;
+}
+
+p, a {
+	font: 16px/150% $paragraph;
+	font-weight: 300;
+}
+
+p.alt {
+	font: 14px/160% $paragraph;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: 400;
+}
+
+.comic {
+	font-family: $comicfont;
+	font-weight: 300;
+}
+
+.comic.heavy {
+	font-weight: 600;
+}
+
+p.note {
+	color: #b8b8b8;
+	font: 12px/100% $paragraph;
+	letter-spacing: .05em;
+	font-weight: 200;
+}
+
+b {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	color: $raspberry;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+}
+
+
+/* #Nav Items
+================================================== */
+
+nav a {
+	position: relative;
+	display: block;
+	margin: 15px 25px;
+	outline: none;
+	color: $raspberry;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 0 20px;
+  	height: 45px;
+  	line-height: 40px;
+	&:hover {
+		color: $lime;
+	}
+	&:focus {
+		color: $lime;
+	}
+}
+
+/* #Selection
+================================================== */
+
+::selection {
+	color: $light;
+	background: $raspberry;
+}
+
+::-moz-selection {
+	color: $light;
+	background: $raspberry;
+}
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+
+/* #PopShack Logo Styles
+================================================== */
+
+@import "logo";
+
